@@ -9,6 +9,7 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edtTime"
         android:layout_width="0dp"
+        android:inputType="number"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +27,17 @@
         app:layout_constraintTop_toBottomOf="@id/edtTime"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTimerStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toTopOf="@id/btnTimer"
+        app:layout_constraintStart_toEndOf="@id/btnTimer"
+        app:layout_constraintBottom_toBottomOf="@id/btnTimer"
         />
 
 
